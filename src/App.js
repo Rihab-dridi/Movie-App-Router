@@ -4,8 +4,6 @@ import Search from './components/Search/search';
 import MovieList from './components/MovieList/MovieList';
 import Add from './components/Add/Add';
 import DetailList  from './components/Details/DetailsList';
-import Details from './components/Details/Details';
-import XXX from'./components/Details/XXX';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import NavBarChild from './NavBar/NavBar';
 import DetailCard from './components/Details/DetailCard';
@@ -93,12 +91,17 @@ function App() {
                   <Route
                  path='/Detail-List'
                  render={(props) => (
-                  <DetailList {...props} movies={movies} />
+                  <DetailList {...props} 
+                  movies={movies}
+                  search={search}
+                  rating={rating} />
                   )}
                   />
                  
                   <Route path='/Detail/:ID' >
-                    <DetailCard   movies={movies}/>
+                    <DetailCard   
+                    movies={movies}
+                   />
                   </Route>
                   
 

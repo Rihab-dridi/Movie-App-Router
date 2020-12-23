@@ -4,7 +4,7 @@ import '../MovieList/MovieList.css';
 import './Details.css'
 
 
-const MovieList = ({movies})=>{
+const MovieList = ({movies, search,rating})=>{
 
    
     return (
@@ -13,10 +13,15 @@ const MovieList = ({movies})=>{
             <div >
             
             <div className="List"  > 
-            {movies.map((movie,i)=> <Details key ={i} movie={movie} />)}
-            </div>
+            {movies
+        .filter(
+          (el) =>
+            el.title.toLowerCase().includes(search.toLowerCase().trim()) && el.rate >= rating
+        )
+                .map((movie,i)=> <Details key ={i} movie={movie} />)}
             </div>
             
+        </div>
         </div>
     
     
