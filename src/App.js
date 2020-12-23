@@ -5,7 +5,7 @@ import MovieList from './components/MovieList/MovieList';
 import Add from './components/Add/Add';
 import DetailList  from './components/Details/DetailsList';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import NavBarChild from './NavBar/NavBar';
+import NavBar from './NavBar/NavBar';
 import DetailCard from './components/Details/DetailCard';
 
 
@@ -60,13 +60,18 @@ function App() {
   return (
     <div className="App">
       <Router>
-                  <NavBarChild/>
+                  <NavBar/>
 
                   <Search setSearch={setSearch}
                   search={search}
                   setRating={setRating}
                   />
               
+                  
+                  <Route exact path='/'
+                  render={()=> <img style={{ widht:"900px",height:"400px",paddingTop:"50px"}} 
+                               src="https://i.pinimg.com/originals/ae/01/df/ae01dfe89339c4753e9972ec6d45e4da.gif"/>}/>
+
                   
                   <Route
                    path='/Movies'

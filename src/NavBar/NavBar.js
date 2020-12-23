@@ -10,13 +10,15 @@ const NavBarChild =()=>{
           <h1 className="noun" >  CINé </h1>
 
           <ul  className="items">
-           
-             <a> <li>Home</li></a>
+              
+          <Link to='/'>
+             <li>Home</li>
+          </Link>
          
 
            <Link to='/Movies/Add'>
              <a> <li>Movies</li></a>
-           </Link>
+            </Link>
 
            <Link to='/Detail-List'>
              <a> <li>Details</li></a>
