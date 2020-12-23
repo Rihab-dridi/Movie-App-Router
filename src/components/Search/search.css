@@ -1,0 +1,16 @@
+.search-bar{
+    background-color: black;
+    display: flex;
+    text-align: center;
+    padding-left:10px;
+    padding-bottom:10px;
+    padding-top:10px;
+    height: 50px;
+
+}
+.search{
+    width:40%;
+    height:20px;
+    margin-right: 10px;
+    background-color: rgb(190, 193, 196);
+}

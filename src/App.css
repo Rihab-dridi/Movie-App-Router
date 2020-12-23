@@ -1,0 +1,29 @@
+.App {
+  text-align: center;
+}
+
+
+*{
+  margin:0;
+  padding:0;
+  
+}
+
+
+
+.movieList{
+  background-color: cyan;
+}
+
+.star-btn{
+  background-color: black;
+  border-color: black;
+}
+
+.star-btn:hover{
+  background-color:gold;
+}
+.Rate{
+  display:flex
+}
+

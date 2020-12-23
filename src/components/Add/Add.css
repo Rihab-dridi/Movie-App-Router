@@ -1,0 +1,43 @@
+ .Add{
+     background-color: black;
+     text-align: start;
+     padding-left:17px;
+ }
+ .add-btn{
+color: rgb(180, 7, 7);
+font-size:300px;
+background-color: black;
+width:300px;
+height:450px;
+
+}
+.add-btn:hover{
+background-color:rgb(180, 7, 7) ;
+color:black;
+}
+
+
+.Modal{
+    width:30%;
+    height: 80%;
+    margin-left:35%;
+    margin-top: 5%;
+    background-color: black;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.Modal input{
+    width:80%;
+    height:25px;
+    margin-top: 10px;
+}
+
+.Modal button{
+    width:100px;
+    height:35px;
+    background-color: white;
+    font-size: medium;
+    margin: 5px;
+    align-self: flex-end;
+}

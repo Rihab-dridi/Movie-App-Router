@@ -1,0 +1,25 @@
+.DetailCard{
+    background-color: black;
+    color:white;
+    border: grey solid 1px;
+    padding:20px;
+   font-size: 20px;
+   text-align: start;
+   display:flex;
+   margin:20px;
+   border:grey;
+} 
+.Details{
+    padding-left:  50px;
+
+}
+
+.Details p{
+    font-size: medium;
+}
+.DetailCard .poster{
+    padding-top:10px;
+}
+.video{
+    padding-top:20px;
+}
