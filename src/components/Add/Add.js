@@ -3,12 +3,14 @@ import Modal from 'react-modal';
 import'./Add.css'
 Modal.setAppElement('#root')
 
-const Add = ({setMovies, addMovieHandler})=>{
+const Add = ({setMovies, addMovieHandler, addDetailHandler})=>{
 const[add,setAdd]=useState(false)
 const[title,setTitle]=useState('')
 const[rate,setRate]=useState('')
 const[img,setImg]=useState('')
 const[description,setDescription]=useState('')
+const[detail,setDetail]=useState('')
+const[trailer,setTrailer]=useState('')
 
 
 const addHandler = ()=>{
@@ -17,8 +19,9 @@ setAdd(!add)
 
 const input =()=>{
  addMovieHandler({id:Math.random(), title:title,rate:rate, img:img, description:description })
-
+ addDetailHandler({id:Math.random(), title:title,rate:rate, img:img, description:description,Detail:detail, trailer:trailer })
 }
+
  const addTitle=(e)=>{
      setTitle(e.target.value)
      
@@ -31,6 +34,14 @@ const addRate=(e)=>{
 }
 const addDescription=(e)=>{
     setDescription(e.target.value)
+}
+
+const addDetail=(e)=>{
+    setDetail(e.target.value)
+}
+
+const addTrailer=(e)=>{
+    setTrailer(e.target.value)
 }
 
 
@@ -65,6 +76,16 @@ const addDescription=(e)=>{
                 <input type="text"
                        placeholder="add description"
                        onChange={addDescription}
+                 /><br/>
+                 <input type="text"
+                       placeholder="add Details"
+                       onChange={addDetail}
+                 /><br/>
+
+                 
+                 <input type="text"
+                       placeholder="add trailer link"
+                       onChange={addTrailer}
                  /><br/>
                 <button onClick={input}>save</button>
                 <button onClick={addHandler}>close</button>

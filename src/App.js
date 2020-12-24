@@ -52,6 +52,9 @@ function App() {
   const addMovieHandler = (newMovie)=>{
     setMovies([...movies,newMovie])
   }
+  const addDetailHandler=(newDetail)=>{
+    setMovies([...movies,newDetail])
+  }
   
   const [search,setSearch]= useState('')
   const [rating,setRating ]=useState('')
@@ -88,6 +91,7 @@ function App() {
                   render={(props)=>(
                     <Add  {...props} setMovies={setMovies}
                  addMovieHandler={addMovieHandler}
+                 addDetailHandler={addDetailHandler}
                  />
                   )}/>
 
