@@ -1,5 +1,6 @@
 import React from 'react';
 import {useParams} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import '../MovieList/MovieList.css';
 import './Details.css'
 
@@ -32,7 +33,11 @@ const DetailCard = ({movies})=>{
                          <iframe className="video" width="660" height="415" 
                           src={(movies.find(movie=> movie.id==ID)).trailer}
                           frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                         </iframe>
+                         </iframe> <br/>
+                          <Link to='/Movies/Add'>
+                         <button className="back-btn"><i class="fas fa-angle-double-left"> Back </i></button>
+                         </Link>
+
                     </div>
                          
             

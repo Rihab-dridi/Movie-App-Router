@@ -7,9 +7,6 @@
     height:450px;
 }
 
-
-
-
 .MovieCard{
     background-color: black;
     color:white;
@@ -17,7 +14,11 @@
     padding:7px;
    font-size: 20px;
    text-align: start;
+   cursor:pointer;
+  
 } 
+
+
 
 .title{
     font-size: 35px;
@@ -29,6 +30,7 @@
     justify-content: space-around;
     margin-top: 5px;
 }
+
 
 span .fas{
     color:gold;
