@@ -12,7 +12,7 @@ import DetailCard from './components/Details/DetailCard';
 function App() {
   const [movies,setMovies]=useState( [
     {
-      id:Math.random(),
+      id:1,
       title:"Captain America",
       rate: 3,
       img:"https://m.media-amazon.com/images/I/51Xp+8qDCbL._AC_.jpg",
@@ -20,7 +20,7 @@ function App() {
       Detail:`Steve Rogers, a rejected military soldier, transforms into Captain America after taking a dose of a "Super-Soldier serum". But being Captain America comes at a price as he attempts to take down a war monger and a terrorist organization.`,
       trailer:"https://www.youtube.com/embed/6y3oHJnfnjU"},
     {
-      id:Math.random(),
+      id:2,
       title:"Captain Marvel",
       rate: 2,
       img:"https://fr.web.img2.acsta.net/pictures/18/12/03/08/53/5968896.jpg",
@@ -29,7 +29,7 @@ function App() {
       trailer:"https://www.youtube.com/embed/0LHxvxdRnYc"
     },
     { 
-      id:Math.random(),
+      id:3,
       title:"THOR ",
       rate: 4,
       img:"https://m.media-amazon.com/images/M/MV5BOGE4NzU1YTAtNzA3Mi00ZTA2LTg2YmYtMDJmMThiMjlkYjg2XkEyXkFqcGdeQXVyNTgzMDMzMTg@._V1_.jpg",
@@ -39,7 +39,7 @@ function App() {
 
     },
     {
-      id:Math.random(),
+      id:4,
       title:"Iron Man 3 ",
       rate: 5,
       img:"https://static.posters.cz/image/750/affiches/avengers-endgame-i-am-iron-man-i76482.jpg",

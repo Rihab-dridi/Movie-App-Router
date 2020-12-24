@@ -26,4 +26,7 @@
 .Rate{
   display:flex
 }
+Link:visited{
+  text-decoration:none;
+}
 

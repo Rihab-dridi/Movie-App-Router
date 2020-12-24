@@ -1,13 +1,12 @@
 .DetailCard{
     background-color: black;
     color:white;
-    border: grey solid 1px;
+    border: rgb(197, 197, 193) solid 1px;
     padding:20px;
    font-size: 20px;
    text-align: start;
    display:flex;
    margin:20px;
-   border:grey;
 } 
 .Details{
     padding-left:  50px;
